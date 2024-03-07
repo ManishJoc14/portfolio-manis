@@ -44,10 +44,10 @@ const listVariants = {
   },
   opened: {
     x: 0,
-    transition : {
-      when : "beforeChildren",
+    transition: {
+      when: "beforeChildren",
       staggerChildren: 0.2,
-    }
+    },
   },
 };
 
@@ -91,17 +91,19 @@ const Navbar = () => {
 
       {/* Social */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
+        <Link href="https://github.com/ManishJoc14" target="blank">
           <Image src="/github.png" alt="github" width={24} height={24} />
+        </Link>
+        <Link
+          href="https://www.facebook.com/profile.php?id=100028545702525" target="blank"
+        >
+          <Image src="/facebook.png" alt="facebook" width={24} height={24} />
         </Link>
         <Link href="/">
           <Image src="/dribble.png" alt="dribble" width={24} height={24} />
         </Link>
         <Link href="/">
           <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="facebook" width={24} height={24} />
         </Link>
         <Link href="/">
           <Image src="/pinterest.png" alt="pinterest" width={24} height={24} />
@@ -112,7 +114,7 @@ const Navbar = () => {
       </div>
 
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden z-20">
+      <div className="md:hidden z-50">
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between"
@@ -145,7 +147,13 @@ const Navbar = () => {
           >
             {links.map((link) => (
               <motion.div key={link.title} variants={listItemVariants}>
-                <Link href={link.url}>{link.title}</Link>
+                <Link
+                  href={link.url}
+                  onClick={() => setOpen((prev) => !prev)}
+                  className="cursor-pointer"
+                >
+                  {link.title}
+                </Link>
               </motion.div>
             ))}
           </motion.div>
