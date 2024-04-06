@@ -9,7 +9,8 @@ const styles = {
   RedToBlue: "linear-gradient(to right, #fde3e4, #93c5fd)",
   BlueToViolet: "linear-gradient(to right, #93c5fd, #c4b5fd)",
   VioletToPurple: "linear-gradient(to right,#c4b5fd, #d8b4fe)",
-  PurpleToRed: "linear-gradient(to right, #d8b4fe,#67e8f9)",
+  PurpleToSky: "linear-gradient(to right, #d8b4fe,#67e8f9)",
+  SkyToRed: "linear-gradient(to right, #67e8f9, #fde3e4)",
 };
 
 const PortfolioPage = () => {
@@ -40,17 +41,24 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {project.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[380px]">
                     <Image src={project.img} alt="projectImage" fill />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl-w[600px]">
                     {project.desc}
                   </p>
-                  <Link href={project.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-                      See Demo
-                    </button>
-                  </Link>
+                  <div className="flex justify-end">
+                    <Link href={project.codelink} target="_blank" className="flex justify-end">
+                      <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                        See Code
+                      </button>
+                    </Link>
+                    <Link href={project.demolink} target="_blank" className="flex justify-end">
+                      <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                        See Demo
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
