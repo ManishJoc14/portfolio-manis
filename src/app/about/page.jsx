@@ -40,10 +40,10 @@ const AboutPage = () => {
 
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">
-              I am a software engineer with a passion for creating and
-              developing web applications. I have a strong foundation in
-              computer science and software engineering, with a focus on
-              front-end development.
+              &quot;I&apos;m a Frontend Developer passionate about building
+              user-friendly web applications. With a focus on frontend
+              development, I&apos;m dedicated to creating visually appealing and
+              functional products while staying updated on industry standards.&quot;
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
