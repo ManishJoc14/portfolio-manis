@@ -10,7 +10,8 @@ const styles = {
   BlueToViolet: "linear-gradient(to right, #93c5fd, #c4b5fd)",
   VioletToPurple: "linear-gradient(to right,#c4b5fd, #d8b4fe)",
   PurpleToSky: "linear-gradient(to right, #d8b4fe,#67e8f9)",
-  SkyToRed: "linear-gradient(to right, #67e8f9, #fde3e4)",
+  SkyToGreen: "linear-gradient(to right, #67e8f9,#67e8f9)",
+  GreenToRed: "linear-gradient(to right, #67e8f9, #fde3e4)",
 };
 
 const PortfolioPage = () => {
