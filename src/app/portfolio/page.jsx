@@ -10,8 +10,8 @@ const styles = {
   BlueToViolet: "linear-gradient(to right, #93c5fd, #c4b5fd)",
   VioletToPurple: "linear-gradient(to right,#c4b5fd, #d8b4fe)",
   PurpleToSky: "linear-gradient(to right, #d8b4fe,#67e8f9)",
-  SkyToGreen: "linear-gradient(to right, #67e8f9,#67e8f9)",
-  GreenToRed: "linear-gradient(to right, #67e8f9, #fde3e4)",
+  SkyToGreen: "linear-gradient(to right, #67e8f9,#65799b)",
+  GreenToRed: "linear-gradient(to right, #65799b, #5e2563)",
 };
 
 const PortfolioPage = () => {
@@ -25,7 +25,7 @@ const PortfolioPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
+      <div className="h-[700vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center ">
           My Works
         </div>

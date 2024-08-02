@@ -11,6 +11,15 @@ export const projects = [
   {
     id: 2,
     color: "BlueToViolet",
+    title: "Shireto",
+    desc: "This is a website site developed for Team Shireto with Nextjs, TainwindCSS, ShadCn.",
+    img: "/shireto.png",
+    codelink: "https://github.com/ManishJoc14/sireto",
+    demolink: "https://sireto.vercel.app/home",
+  },
+  {
+    id: 3,
+    color: "VioletToPurple",
     title: "Zingo",
     desc: "Zingo is chat application made with React, Node.js, Express.js and Socket.io. You can chat with random peoples online. Sorry the is not hosted!!",
     img: "/zingo.png",
@@ -18,8 +27,8 @@ export const projects = [
     demolink: "https://zingo-delta.vercel.app/",
   },
   {
-    id: 3,
-    color: "VioletToPurple",
+    id: 4,
+    color: "PurpleToSky",
     title: "My another Portfolio",
     desc: "The interesting thing is that i made this with my mobile only with Html, CSS, Bootsrap and pure Javascipt for animations.",
     img: "/portfolio.png",
@@ -27,8 +36,8 @@ export const projects = [
     demolink: "https://manishjoc14.github.io/Portfolio/#",
   },
   {
-    id: 4,
-    color: "PurpleToSky",
+    id: 5,
+    color: "SkyToGreen",
     title: "Habit Manager",
     desc: "This is a habit Manager web app built with React, and C++ for creating apis and connecting with database. Soryy the backed is not hosted!!",
     img: "/habitBuddy.png",
@@ -36,22 +45,22 @@ export const projects = [
     demolink: "https://github.com/ManishJoc14/Habit-Buddy",
   },
   {
-    id: 5,
-    color: "SkyToGreen",
+    id: 6,
+    color: "GreenToRed",
     title: "Valentine",
     desc: "This is a fun project for valentines day and made with React.",
     img: "/valentine.png",
     codelink: "https://github.com/ManishJoc14/valentine",
     demolink: "https://manishjoc14.github.io/valentine/",
   },
-  {
-    id: 6,
-    color: "GreenToRed",
-    title: "Mouse Tracking",
-    desc: "This is a fun project and made with Html and CSS.",
-    img: "/mousetracking.png",
-    codelink:
-      "https://github.com/ManishJoc14/CSS/blob/master/mouse%20traking/index.html",
-    demolink: "https://mousetracking-8ngefozm0-manishjoc14.vercel.app/",
-  },
+  // {
+  //   id: 7,
+  //   color: "RedToBlue",
+  //   title: "Mouse Tracking",
+  //   desc: "This is a fun project and made with Html and CSS.",
+  //   img: "/mousetracking.png",
+  //   codelink:
+  //     "https://github.com/ManishJoc14/CSS/blob/master/mouse%20traking/index.html",
+  //   demolink: "https://mousetracking-8ngefozm0-manishjoc14.vercel.app/",
+  // },
 ];
